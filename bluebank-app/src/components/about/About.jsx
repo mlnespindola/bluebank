@@ -1,7 +1,8 @@
 import React from "react";
 import "./about.scss";
 
-export default function About() {
+export default function About(props) {
+  
   return (
     <div className="about-section" id="about">
       <div className="left-container">
@@ -18,7 +19,9 @@ export default function About() {
           voluptatem est quae repudiandae in libero nesciunt molestias nam,
           illum consequatur velit similique inventore ex laborum!
         </p>
-        <button className="btn background-gradient">Join us</button>
+        <button onClick={props.onRegisterBtn} className="btn background-gradient">
+          sign up
+        </button>
       </div>
     </div>
   );

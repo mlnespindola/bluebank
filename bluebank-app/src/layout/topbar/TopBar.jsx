@@ -1,27 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./topbar.scss";
 
 export default function TopBar() {
   return (
-    <div className="topbar" id="topbar">
+    <header className="topbar" id="topbar">
       <div className="topbar-container">
         <div className="left-container">
-          <div className="logo">
+          <a href="/" className="logo">
             <h2>BlueBank.</h2>
-          </div>
+          </a>
         </div>
         <div className="right-container">
           <nav>
-            <a href="#about">about</a>
-            <a href="/" alt="login" className="login">
-              login
-            </a>
-            <a href="/" alt="register" className="register">
-              register
-            </a>
+            <ul>
+              <li>
+                <a href="#about">about</a>
+              </li>
+              <li>
+                <Link to='/register'>register</Link>
+              </li>
+              <li>
+                <Link to='/login'>login</Link>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

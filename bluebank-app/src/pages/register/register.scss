@@ -1,0 +1,57 @@
+@import "../../global.scss";
+
+#register {
+  background-color: $colordark3;
+  padding: 50px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: $colorgrey8;
+    border-radius: $radius;
+
+    label {
+      font-family: $fontsecondary;
+      margin-bottom: 5px;
+    }
+
+    input {
+      line-height: 20px;
+      text-indent: 10px;
+      margin-bottom: 10px;
+      border-radius: 7px;
+      border-style: none;
+
+      &:focus {
+        outline: none;
+        border: 2px solid rgba(0.7, 0.222, 0.3, 0.4);
+      }
+    }
+
+    h4, h2 {
+      margin: 0 auto;
+    }
+
+    span {
+      margin: 10px auto;
+      padding: 10px;
+      background-color: rgb(240, 185, 185);
+      font-family: $fontsecondary;
+      border-radius: 10px;
+    }
+
+    #register-btn {
+      margin: 20px 0;
+    }
+  }
+}
